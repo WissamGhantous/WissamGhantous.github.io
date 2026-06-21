@@ -22,11 +22,18 @@
 
 <main>
   <div class="clearfix">
-    <div class="portrait-wrap">
-      <img src="PictureWhiteRabbit.jpg">
-      <div class="portrait-caption">Photo taken at the White Rabbit</div>
-    </div>
+<div class="portrait-wrap">
+  <img id="portrait-photo" src="PictureWhiteRabbit.jpg" alt="Portrait of Wissam Ghantous">
+  <div id="portrait-caption" class="portrait-caption" style="text-align:left;">Photo graciously taken by Jay Swar at the White Rabbit</div>
+</div>
 
+<script>
+  var pics = ['PictureWhiteRabbit.jpg', 'Picture3.jpg', 'Picture2.jpg'];
+  var captions = ['Photo graciously taken by Jay Swar at the White Rabbit', "Photo taken at the Duke Humfrey's Library", 'Photo taken at the Oxford Divinity School'];
+  var randomIndex = Math.floor(Math.random() * pics.length);
+  document.getElementById('portrait-photo').src = pics[randomIndex];
+  document.getElementById('portrait-caption').textContent = captions[randomIndex];
+</script>
     <div class="subtitle" style="font-size:22px; margin-top:4px; margin-bottom:20px;">Assistant Professor of Mathematics</div>
     <div class="subtitle" style="font-size:16px; margin-top:-20px; margin-bottom:20px;"> University of Central Florida</div>
 
@@ -62,7 +69,7 @@
     <ul>
       <li>July 2026. CedarCrypt. Cyprus, Greece.</li>
       <li>July 2026. Seventeenth Algorithmic Number Theory Symposium, ANTS-XVII. Groningen, Netherlands.</li>
-      <li>June 2026. RNT 7: Rethinking Number Theory. Online.</li>
+      <li>June 2026. Project leader at RNT 7: Rethinking Number Theory. Online.</li>
       <li>May 2026. MaGIC: Marche Workshop on Group Actions in Cryptography. Italy.</li>
       <li>April 2026. CAE in Cybersecurity Community 2026 Symposium. Pittsburgh, PA, USA.</li>
       <li>March 2026. AMS Fall South Eastern Sectional Meeting. Savannah, GA, USA.</li>
