@@ -24,12 +24,12 @@
   <div class="clearfix">
 <div class="portrait-wrap">
   <img id="portrait-photo" src="PictureWhiteRabbit.jpg" alt="Portrait of Wissam Ghantous">
-<div id="portrait-caption" class="portrait-caption" style="text-align:left;">Photo graciously taken by <a href="https://havarddj.github.io">Havard Damm-Johnsen</a> at the White Rabbit</div>
+<div id="portrait-caption" class="portrait-caption" style="text-align:left;">Photo graciously taken by Havard Damm-Johnsen at the White Rabbit</div>
 </div>
 
 <script>
   var pics = ['PictureWhiteRabbit.jpg', 'Picture3.jpg', 'Picture2.jpg'];
-  var captions = ['Photo graciously taken by <a href="https://havarddj.github.io">Havard Damm-Johnsen</a> at the White Rabbit', "Photo taken at the Duke Humfrey's Library", 'Photo taken at the Oxford Divinity School'];
+  var captions = ['Photo graciously taken by Havard Damm-Johnsen at the White Rabbit', "Photo taken at the Duke Humfrey's Library", 'Photo taken at the Oxford Divinity School'];
   var randomIndex = Math.floor(Math.random() * pics.length);
   document.getElementById('portrait-photo').src = pics[randomIndex];
   document.getElementById('portrait-caption').innerHTML = captions[randomIndex];
