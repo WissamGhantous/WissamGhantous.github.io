@@ -32,7 +32,7 @@
   var captions = ['Photo graciously taken by <a href="https://havarddj.github.io">Havard Damm-Johnsen</a> at the White Rabbit', "Photo taken at the Duke Humfrey's Library", 'Photo taken at the Oxford Divinity School'];
   var randomIndex = Math.floor(Math.random() * pics.length);
   document.getElementById('portrait-photo').src = pics[randomIndex];
-  document.getElementById('portrait-caption').textContent = captions[randomIndex];
+  document.getElementById('portrait-caption').innerHTML = captions[randomIndex];
 </script>
     <div class="subtitle" style="font-size:22px; margin-top:4px; margin-bottom:20px;">Assistant Professor of Mathematics</div>
     <div class="subtitle" style="font-size:16px; margin-top:-20px; margin-bottom:20px;"> University of Central Florida</div>
