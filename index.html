@@ -29,7 +29,7 @@
 
 <script>
   var pics = ['PictureWhiteRabbit.jpg', 'Picture3.jpg', 'Picture2.jpg'];
-  var captions = ['Photo graciously taken by Jay Swar at the White Rabbit', "Photo taken at the Duke Humfrey's Library", 'Photo taken at the Oxford Divinity School'];
+  var captions = ['Photo graciously taken by <a href="https://havarddj.github.io">Havard Damm-Johnsen</a> at the White Rabbit', "Photo taken at the Duke Humfrey's Library", 'Photo taken at the Oxford Divinity School'];
   var randomIndex = Math.floor(Math.random() * pics.length);
   document.getElementById('portrait-photo').src = pics[randomIndex];
   document.getElementById('portrait-caption').textContent = captions[randomIndex];
